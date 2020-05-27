@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_a_color"
+        android:gravity="center_horizontal"
+        android:textColor="#0612F7">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/color_group"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/red_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/blue_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/green_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/green">
+        </RadioButton>
+    </RadioGroup>
+
+</LinearLayout>
